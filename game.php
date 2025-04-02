@@ -28,7 +28,7 @@ function generate_cards($length, $min, $max): array
     return $randomArray;
 }
 
-$deck =  generate_cards(10, 10, 100);
+$deck = generate_cards(10, 10, 100);
 
 
 function game($deck): string
@@ -55,9 +55,9 @@ function game($deck): string
     // print_r($P);
     if (array_sum($V) > array_sum($P))
         return 'Vasya';
-    else 
+    else
         return 'Petya';
-        
+
 }
 
 echo game([1, 2, 3]) . "\n";
