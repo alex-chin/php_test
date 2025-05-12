@@ -29,9 +29,9 @@ class Solution
 
     /**
      * @param Integer[] $nums1
-     * @param Integer $m
+     * @param int $m
      * @param Integer[] $nums2
-     * @param Integer $n
+     * @param int $n
      * @return void
      */
     function merge(&$nums1, $m, $nums2, $n): void
