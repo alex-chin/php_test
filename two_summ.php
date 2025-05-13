@@ -43,6 +43,7 @@ class Solution
                 return [$n[0], $n[1]];
             }
         }
+        return [-1, -1];
     }
 
 }
