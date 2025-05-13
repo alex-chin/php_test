@@ -2,13 +2,13 @@
 
 
 // обмен элемента i c элементом j в массиве nums
-function obmen(&$nums, $i, $j): void
+function obmen(array &$nums, $i, $j): void
 {
     [$nums[$i], $nums[$j]] = [$nums[$j], $nums[$i]]; // Обмен в одну строку
 }
 
 // сортировка массива 1 проход
-function b_sort($nums): array
+function b_sort(array $nums): array
 {
     $n = count($nums);
     foreach (range(0, $n - 1) as $j) {
