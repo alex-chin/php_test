@@ -36,11 +36,11 @@ class Solution
 
     function twoSum($nums, $target): array
     {
-        foreach ($this->permutation(count($nums)) as $n) {
-            $n1 = $nums[$n[0]];
-            $n2 = $nums[$n[1]];
+        foreach ($this->permutation(count($nums)) as [$n1_idx, $n2_idx]) {
+            $n1 = $nums[$n1_idx];
+            $n2 = $nums[$n2_idx];
             if ($n1 + $n2 == $target) {
-                return [$n[0], $n[1]];
+                return [$n1_idx, $n2_idx];
             }
         }
         return [-1, -1];
@@ -49,5 +49,5 @@ class Solution
 }
 
 
-(new Solution())->twoSum([2, 7, 11, 15], 9);
+print_r((new Solution())->twoSum([2, 7, 11, 15], 9));
 
