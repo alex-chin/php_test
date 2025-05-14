@@ -11,8 +11,15 @@ if (@$dom->load($filePath)) {
     echo "Ошибка загрузки XML";
 }
 
+echo "\n----------------------\n";
+
 $xpath = new DOMXPath($dom);
 
 $title = $xpath->evaluate('string(/rss/channel/title)');
 
-echo $title;
+echo $title . "\n";
+
+$titles = $xpath->evaluate('//channel/item/title/text()');
+foreach ($titles as $title) {
+    echo $title->nodeValue . "\n";
+}
