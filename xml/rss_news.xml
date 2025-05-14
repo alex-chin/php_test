@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Новости IT-мира</title>
+        <link>https://example.com/news</link>
+        <description>Последние новости из мира технологий и программирования</description>
+        <language>ru</language>
+        <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+        <lastBuildDate>Mon, 15 Jan 2024 13:30:00 GMT</lastBuildDate>
+        <atom:link href="https://example.com/news/rss" rel="self" type="application/rss+xml" />
+
+        <!-- Новость 1 -->
+        <item>
+            <title>PHP 8.4 выйдет в ноябре 2024 года</title>
+            <link>https://example.com/news/php-8-4-release</link>
+            <description>Ожидается, что PHP 8.4 принесёт новые возможности в JIT-компилятор и улучшения производительности.</description>
+            <pubDate>Mon, 15 Jan 2024 10:00:00 GMT</pubDate>
+            <guid isPermaLink="false">news-php-8-4-12345</guid>
+            <category>PHP</category>
+            <category>Программирование</category>
+        </item>
+
+        <!-- Новость 2 -->
+        <item>
+            <title>Искусственный интеллект в веб-разработке</title>
+            <link>https://example.com/news/ai-in-webdev</link>
+            <description>Новые инструменты на основе ИИ помогают разработчикам создавать код быстрее и эффективнее.</description>
+            <pubDate>Fri, 12 Jan 2024 14:30:00 GMT</pubDate>
+            <guid isPermaLink="false">news-ai-webdev-67890</guid>
+            <category>ИИ</category>
+            <category>Веб-разработка</category>
+        </item>
+
+        <!-- Новость 3 -->
+        <item>
+            <title>Релиз WordPress 6.5</title>
+            <link>https://example.com/news/wordpress-6-5</link>
+            <description>Новая версия WordPress включает улучшенный редактор блоков и новые API для разработчиков тем.</description>
+            <pubDate>Wed, 10 Jan 2024 08:15:00 GMT</pubDate>
+            <guid isPermaLink="false">news-wordpress-6-5-54321</guid>
+            <category>WordPress</category>
+            <category>CMS</category>
+        </item>
+    </channel>
+</rss>
