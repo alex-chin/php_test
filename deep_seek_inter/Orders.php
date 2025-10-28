@@ -64,18 +64,15 @@ $orders = [
 
 $customers = [];
 
-$customers = array_map(function ($item) use (&$orders, &$customers) {
-    $customers[$item['customer_id']] = 0;
-    echo $item['customer_id'];
+foreach ($orders as $order) {
+    if (isset($customers[$order['customer_id']])) {
+        $customers[$order['customer_id']] +=$order['amount'] ;
+    } else {
+        $customers[$order['customer_id']] = $order['amount'] ;
+    }
+}
 
-}, $orders);
-
-//$customers = array_unique($customers);
-
-
-//array_map(function ($item) use (&$orders, &$customers) {
-//    $customers[] = $item['customer_id'];
-//}, $orders);
+$customers = array_filter($customers, fn($customer) => $customer > 1300);
 
 print_r($customers);
 
